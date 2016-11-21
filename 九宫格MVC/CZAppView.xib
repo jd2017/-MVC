@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Ofu-8j-4HC" customClass="CZAppView">
+            <rect key="frame" x="0.0" y="0.0" width="75" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kYy-Qd-SxN">
+                    <rect key="frame" x="15" y="0.0" width="45" height="45"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hdw-uR-hy0">
+                    <rect key="frame" x="0.0" y="45" width="75" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AMh-nT-9e6">
+                    <rect key="frame" x="15" y="66" width="45" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="下载" backgroundImage="buttongreen.png"/>
+                    <state key="disabled" title="已下载"/>
+                    <state key="highlighted" backgroundImage="buttongreen_highlighted.png"/>
+                    <connections>
+                        <action selector="btnDownloadClick:" destination="Ofu-8j-4HC" eventType="touchUpInside" id="vaK-3v-VI5"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnDownload" destination="AMh-nT-9e6" id="6XW-OO-Lew"/>
+                <outlet property="imgViewIcon" destination="kYy-Qd-SxN" id="6nB-4d-0Ou"/>
+                <outlet property="lblName" destination="hdw-uR-hy0" id="CN1-6D-ptc"/>
+            </connections>
+            <point key="canvasLocation" x="209.5" y="108"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="buttongreen.png" width="193" height="81"/>
+        <image name="buttongreen_highlighted.png" width="193" height="81"/>
+    </resources>
+</document>
